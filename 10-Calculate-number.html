@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let nu1 
+        let nu2 
+        function web_begin(N1 , N2) {
+            nu1 = parseInt(N1)
+            nu2 = parseInt(N2)
+        }
+        function sum(n1 , n2) {
+            web_begin(n1 , n2)
+            document.getElementById('ans').innerHTML = nu1 + nu2
+        }
+        function minus(n1 , n2) {
+            web_begin(n1 , n2)
+            document.getElementById('ans').innerHTML = nu1 - nu2
+        }
+        function multiply(n1 , n2) {
+            web_begin(n1 , n2)
+            document.getElementById('ans').innerHTML = nu1 * nu2
+        }
+        function device(n1 , n2) {
+            web_begin(n1 , n2)
+            document.getElementById('ans').innerHTML = nu1 / nu2
+        }
+    </script>
+    <title>10-calculate-number.html</title>
+</head>
+<body>
+    Input Number : <input type="text" name="" id="num1">
+    <br>
+    <br>
+    Input Number : <input type="text" name="" id="num2">
+    <br>
+    <br>
+    <input type="button" value="+" onclick="sum(document.getElementById('num1').value ,document.getElementById('num2').value)">
+    <input type="button" value="-" onclick="minus(document.getElementById('num1').value ,document.getElementById('num2').value)"> 
+    <input type="button" value="*" onclick="multiply(document.getElementById('num1').value ,document.getElementById('num2').value)">
+    <input type="button" value="/" onclick="device(document.getElementById('num1').value ,document.getElementById('num2').value)">
+    <br>
+    <br>
+    <p id ="ans"</p>
+</body>
+</html>
