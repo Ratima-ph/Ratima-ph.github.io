@@ -7,14 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--cssอยู่ในเฮด-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <style>
+         .jumbotron {
+            position: relative;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        video {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /*  object-fit is not supported on IE  */
+            object-fit: cover;
+            /* opacity: 0.5; */
+        }
+
+        .container {
+            z-index: 2;
+            position: relative;
+        }
+    </style>
+    
     <title>22-web-bootstrap.html</title>
 </head>
 <body>
-    <div class="jiumbotron jumbotron-fluid mb-0" style="background-image: url(https://www.techxcite.com/topics/33774/filemanager/pb-1.jpg);"
-        <div class="container">
-            <h1 class="display-3">Ratima Phongchai</h1>
-            <p class="lead">Jumbo helper text</p>
-        </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0">
+    <!-- style="background-image: url(https://www.appliedimage.com/wp-content/uploads/2013/10/header-background.png); background-size: cover;"> -->
+    <video src="https://cdn.videvo.net/videvo_files/video/free/2019-01/large_watermarked/181015_13_Venice%20Beach%20Drone_18_preview.mp4"autoplay loop muted></video>
+    <div class="container text-light">
+        <h1 class="display-3">Ratima Website</h1>
+        <p class="lead">Rayong Technical College</p>
+    </div>
+
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand" href="#">Ratima</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +89,7 @@
               <div class="card">
                 <img src="https://i.pinimg.com/originals/92/74/67/92746785fda5b57bbb965101d6343fe3.jpg">
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
+                  <h5 class="card-title">บันทึกข้อมูลนักเรียน</h5>
                   <p class="card-text">
                     <div class="form-group">
                         <label for="">รหัสนักศึกษา</label>
@@ -71,7 +101,7 @@
                           <input type="text" name="" id="sname" class="form-control" placeholder="" aria-describedby="helpId">
                           <small id="helpId" class="text-muted"></small>
                         </div>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <a href="#" class="btn btn-primary">Subumit</a>
                 </div>
               </div>
             </div>
@@ -79,11 +109,9 @@
               <div class="card">
                 <img src="https://i.pinimg.com/originals/92/74/67/92746785fda5b57bbb965101d6343fe3.jpg">
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    
-                      
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">ผลลัพธ์</h5>
+                  <p class="card-text">63309010050</p>
+                  <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                 </div>
               </div>
             </div>
